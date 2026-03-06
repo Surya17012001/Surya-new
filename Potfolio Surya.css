@@ -1,0 +1,143 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+/* HEADER */
+
+header{
+padding:20px;
+background:#020617;
+border-bottom:1px solid #1e293b;
+}
+
+.profile{
+display:flex;
+align-items:center;
+gap:20px;
+}
+
+.profile img{
+width:80px;
+height:80px;
+border-radius:50%;
+border:3px solid #38bdf8;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:center;
+gap:20px;
+padding:15px;
+background:#020617;
+position:sticky;
+top:0;
+flex-wrap:wrap;
+}
+
+.nav-btn{
+background:none;
+border:none;
+color:#cbd5e1;
+font-size:16px;
+cursor:pointer;
+padding:8px 15px;
+border-radius:8px;
+transition:.3s;
+}
+
+.nav-btn:hover{
+background:#38bdf8;
+color:black;
+}
+
+.active{
+background:#38bdf8;
+color:black;
+}
+
+/* CONTENT */
+
+main{
+padding:40px 20px;
+max-width:900px;
+margin:auto;
+line-height:1.7;
+}
+
+h1{
+color:#38bdf8;
+margin-bottom:20px;
+}
+
+.card{
+background:#020617;
+padding:20px;
+border-radius:12px;
+margin-top:20px;
+border:1px solid #1e293b;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+/* TABLET */
+
+@media(max-width:900px){
+
+nav{
+gap:10px;
+}
+
+.nav-btn{
+font-size:14px;
+padding:6px 10px;
+}
+
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+.profile{
+flex-direction:column;
+text-align:center;
+}
+
+.profile img{
+width:70px;
+height:70px;
+}
+
+main{
+padding:25px 15px;
+}
+
+h1{
+font-size:22px;
+}
+
+}
+
+/* SMALL MOBILE */
+
+@media(max-width:400px){
+
+.nav-btn{
+font-size:13px;
+padding:5px 8px;
+}
+
+}
